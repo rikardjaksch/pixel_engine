@@ -167,6 +167,7 @@ int PixelEngine::run() {
         SDL_RenderPresent(globals::sdl_renderer);
     }
 
+    on_destruct();
     return 0;
 }
 

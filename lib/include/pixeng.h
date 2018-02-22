@@ -2,7 +2,6 @@
 
 /*
  * TODO:
- *  - Add 'on_mouse_event'-method
  *  - Implement filled rect plotting
  *  - Implement circle plotting
  *  - Implement filled circle plotting
@@ -101,7 +100,7 @@ enum class Mouse {
 class PixelEngine {
 public:
     PixelEngine();
-    ~PixelEngine();
+    virtual ~PixelEngine();
 
     bool create(int num_w_pixels,
                 int num_h_pixels,
@@ -127,6 +126,7 @@ public:
 protected:
     virtual void on_initialize() = 0;
     virtual bool on_update(float delta_time) = 0;
+    virtual void on_destruct() {}
 
 private:
     int real_window_width() const;
