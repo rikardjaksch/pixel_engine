@@ -6,4 +6,5 @@ add_subdirectory(lib)
 # Sample projects
 add_subdirectory(samples/base)
 add_subdirectory(samples/snake)
+add_subdirectory(samples/cellular_automata)
 
