@@ -1,5 +1,4 @@
 #include "pixeng.h"
-#include <iostream>
 #include <string.h>
 #include <math.h>
 #include <SDL.h>
@@ -145,7 +144,7 @@ int PixelEngine::run() {
             }
         }
 
-        // Begin the frame by clering out the pixel-array (to the color black)
+        // Begin the frame by clearing out the pixel-array (to the color black)
         // Note: This could be nice to let the user modify
         memset(globals::pixels, 0x00, sizeof(Color) * real_window_width() * real_window_height());
 
